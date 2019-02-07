@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Happy Valentines Day!</title>
+    <title>dummy title</title>
+    <!-- <title>Happy Valentine's Day!</title> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="design.js"></script>
 <link rel="stylesheet" href="style.css">
 
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
@@ -17,19 +19,28 @@
   <body>
 
     <main>
+        <div id = "main message">
+        <h1 id="oldMessage"></h1><h1 id="newMessage"></h1>
 
-      <h1>Will you be my Lt. Hawkeye?</h1>
-
-        <img width="250px" src = "https://iblos3om.files.wordpress.com/2009/08/hawkeye_mustang.png">
+        <img id = "mushy" width="250px" src = "https://iblos3om.files.wordpress.com/2009/08/hawkeye_mustang.png">
         <br>
-<button type="button" onclick="location.href='happy-v-day.html'">
+        </div>
+
+        <div id = "buttons">
+<button id="yes" type="button">
     Yes
 </button>
 
-<button type="button">
+<button id="no" type="button">
     No
 </button>
+        </div>
+
+        <div id="coupons"> 
+        <img class = "prize" width = "80px" src = "https://media.giphy.com/media/lAa04eY0ziyVa/giphy.gif">
+        <img class = "prize" width = "80px" src = "https://media.giphy.com/media/lAa04eY0ziyVa/giphy.gif">
+        <img class = "prize" width = "80px" src = "https://media.giphy.com/media/lAa04eY0ziyVa/giphy.gif">
+        </div>
     </main>
-    <script src="design.js"></script>
   </body>
 </html>
