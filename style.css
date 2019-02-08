@@ -25,12 +25,12 @@ body {
   z-index: 1; /* the content page should go behind the cover pages */
   
   /* Size & Position */
-  left: 0px;
-  width: 400px;
-  margin-left: 0px; /* half of width */
-  top: 0px;
-  height: 500px;
-  margin-top: 0px; /* half of height */
+  left: 10%;
+  width: 80%;
+  margin-left: 0%; /* half of width */
+  top: 5%;
+  height: 80%;
+  margin-top: 0%; /* half of height */
   
   /* Add some styling, so the pages are opaque */
   background-color: #eee;
@@ -54,29 +54,13 @@ body {
   /* odd pages flip along left side, and with minus degree rotation */
   transform-origin: bottom;
     
-  /* Some styling */
-  border-radius: 0px 8px 8px 0px;
-    -moz-border-radius: 0px 8px 8px 0px;
-    -webkit-border-radius: 0px 8px 8px 0px;
-  box-shadow: inset 15px 0px 15px -15px rgba(0,0,0, 0.2);
-    -moz-box-shadow: inset 15px 0px 15px -15px rgba(0,0,0, 0.2);
-    -webkit-box-shadow: inset 15px 0px 15px -15px rgba(0,0,0, 0.2);
 }
 
 .page.even {
-  margin-top: 500px; 
-
+  top: 85%; 
   /* even pages flip along right side, and with positive degree rotation */
   transform-origin: top;
   transform: rotateX(180deg); /* even pages start rotated (closed book) */
-  
-  /* Some styling */
-  border-radius: 8px 0px 0px 8px;
-    -moz-border-radius: 8px 0px 0px 8px;
-    -webkit-border-radius: 8px 0px 0px 8px;
-  box-shadow: inset -15px 0px 15px -15px rgba(0,0,0, 0.3);
-    -moz-box-shadow: inset -15px 0px 15px -15px rgba(0,0,0, 0.3);
-    -webkit-box-shadow: inset -15px 0px 15px -15px rgba(0,0,0, 0.3);
 }
 
 .page.odd.turn {
