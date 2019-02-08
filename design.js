@@ -9,20 +9,11 @@ var image3 = "http://www.walkwithgod.org/wp-content/uploads/2014/01/117-3.jpg"
 var count = 3
 
 $(document).ready(function(){
-$('#message').text("Will you be my Lt. Hawkeye?");
-$('#coupons').hide()
 $("#yes").click(function(){
-    $("#message").fadeOut("slow", function(){
-        $("#message").text("Happy Valentine's Day!").fadeIn("slow");
-    });
-    $("#buttons").fadeOut("slow", function(){
-        $("#coupons").fadeIn("slow");
-    });
-    $("#mushy").fadeOut("slow",function(){
-        $("#mushy").attr("src", cute).fadeIn("slow");
-    });
+    $("#cover, #cover_back").toggleClass("turn");
   });
-$(".coupon").click(function(){
+
+$(".cover").click(function(){
     var image
     if (count > 0) {
         if (count == 3) {
@@ -36,11 +27,9 @@ $(".coupon").click(function(){
         $(this).fadeOut(function(){
             $(this).attr("src",image).fadeIn("slow");
         });
-    } else { pass; }
+    }
 });
 });
-
-
 // var productImage = $('img');
 // var productOverlay = $('.product-image-overlay');
 // var productOverlayImage = $('.product-image-overlay img');
