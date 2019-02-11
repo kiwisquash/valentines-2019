@@ -13,6 +13,10 @@ $("#yes").click(function(){
     $("#cover, #cover_back").toggleClass("turn");
   });
 
+$("#no").click(function(){
+    alert("Happy V... oh wait, you just clicked 'no,' didn't you?\nOh man, I did not see that coming. I thought you'd just click 'yes.'\nUhm... maybe you can just click 'yes' even if you don't mean it?\n...Please?");
+  });
+
 $(".cover").click(function(){
     var image
     if (count > 0) {
