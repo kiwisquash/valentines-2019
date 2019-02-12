@@ -22,28 +22,18 @@ h1 {
     text-shadow: 1px 1px 2px #082b34; 
 }
 
-#inner-msg {
-    color: #CEF0D4;
-    font-family: 'Rouge Script', cursive;
-    font-size: 50px; 
-    font-weight: normal; 
-    line-height: 48px; 
-    margin: 10% 0 0; 
-    text-align: center; 
-    text-shadow: 1px 1px 2px #082b34; 
-}
 .page {
   display: inline-block;
   position: fixed;
-  z-index: 1; /* the content page should go behind the cover pages */
+  z-index: 1; 
   
   /* Size & Position */
   left: 10%;
   width: 70%;
-  margin-left: 0%; /* half of width */
+  margin-left: 0%; 
   top: 5%;
   height: 80%;
-  margin-top: 0%; /* half of height */
+  margin-top: 0%; 
   
   /* Add some styling, so the pages are opaque */
   background-color: #eee;
@@ -64,14 +54,52 @@ h1 {
   transform-origin: bottom;
 }
 
+#cover {
+  z-index: 3;
+ background-image: url("images/transmutation-circle.png"), url("images/cool-yellow.png");
+ background-size: contain, cover;
+ background-repeat: no-repeat, no-repeat;
+ background-position: center, center;
+}
+:w
+
+#mushy {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #cover.turn {
   transform: rotateX(-180deg);
+}
+
+
+#inner-top {
+  /* Some styling */
+  overflow-y: auto;
+  background-image: url( "images/Inside-image.png"),url("images/hearts.jpg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #inner-bottom {
   top: 85%; 
   transform-origin: top;
   transform: rotateX(180deg); 
+  z-index: 2;
+}
+
+#inner-msg {
+    color: #CEF0D4;
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 10% 0 0; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34; 
 }
 
 #inner-bottom.turn {
@@ -84,32 +112,4 @@ h1 {
 
 .coupon {
     width: 20%;
-}
-
-#cover {
-  z-index: 3;
-  background-image: url("images/transmutation-circle.png"), url("images/cool-yellow.png");
- background-size: contain, cover;
- background-repeat: no-repeat, no-repeat;
- background-position: center, center;
-}
-
-#mushy {
-    width: 45%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#inner-top {
-  /* Some styling */
-  overflow-y: auto;
-  background-image: url( "images/Inside-image.png"),url("images/hearts.jpg");
-  background-size: contain, cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-#inner-bottom {
-  z-index: 2;
 }
