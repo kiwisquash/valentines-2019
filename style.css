@@ -17,7 +17,7 @@ h1 {
     font-family: 'Rouge Script', cursive;
     font-size: 250%; 
     font-weight: normal; 
-    margin: 20% 0 0; 
+    margin: 20% 0 0 0; 
     text-align: center; 
     text-shadow: 1px 1px 2px #082b34; 
 }
@@ -50,7 +50,7 @@ h1 {
     -webkit-transition: transform 1.0s ease;
 
   /* Hide content that overflows the page */
-  overflow: auto;
+  overflow: visible;
   transform-origin: bottom;
 }
 
@@ -61,19 +61,27 @@ h1 {
  background-repeat: no-repeat, no-repeat;
  background-position: center, center;
 }
-:w
 
 #mushy {
     width: 45%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
+
+#buttons {
+    display: block;
+    margin: 5%;
+}
+	
+/* .button { */
+/*  display: block; */
+/*  background: #34696f; */
+/*  border: 2px; */
+/* } */
 
 #cover.turn {
   transform: rotateX(-180deg);
 }
-
 
 #inner-top {
   /* Some styling */
@@ -96,7 +104,7 @@ h1 {
     font-family: 'Rouge Script', cursive;
     font-size: 50px; 
     font-weight: normal; 
-    line-height: 48px; 
+    /* line-height: 48px; */ 
     margin: 10% 0 0; 
     text-align: center; 
     text-shadow: 1px 1px 2px #082b34; 

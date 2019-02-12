@@ -18,7 +18,7 @@ $("#no").click(function(){
   });
 
 $(".cover").click(function(){
-    // Remove the class cover
+    $(this).off("click").removeClass("cover");
     var image
     if (count > 0) {
         if (count == 3) {
