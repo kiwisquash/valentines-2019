@@ -17,7 +17,7 @@ h1 {
     font-family: 'Rouge Script', cursive;
     font-size: 250%; 
     font-weight: normal; 
-    margin: 20% 0 0 0; 
+    /* margin: 20% 0 0 0; */ 
     text-align: center; 
     text-shadow: 1px 1px 2px #082b34; 
 }
@@ -32,7 +32,7 @@ h1 {
   width: 70%;
   margin-left: 0%; 
   top: 5%;
-  height: 80%;
+  height: 100%;
   margin-top: 0%; 
   
   /* Add some styling, so the pages are opaque */
@@ -73,11 +73,10 @@ h1 {
     margin: 5%;
 }
 	
-/* .button { */
-/*  display: block; */
-/*  background: #34696f; */
-/*  border: 2px; */
-/* } */
+.button {
+    font-size: large;
+ display: inline-block;
+}
 
 #cover.turn {
   transform: rotateX(-180deg);
@@ -93,15 +92,14 @@ h1 {
 }
 
 #inner-bottom {
-  top: 85%; 
+  top: 100%; 
   transform-origin: top;
   transform: rotateX(180deg); 
   z-index: 2;
-  background-image: url("images/cool-yellow.png");
 }
 
 #inner-msg {
-    color: #CEF0D4;
+    color: #FEB7FF;
     font-family: 'Rouge Script', cursive;
     /* font-size: 50px; */ 
     font-weight: normal; 
@@ -120,8 +118,12 @@ h1 {
 }
 
 #main-msg{
+    /* border-style: solid; */
+    /* border-radius: 10px; */
+    /* border-width: 2px; */
+    /* border-color: #FDFDF5; */
     width: 75%;
-    margin: 0 auto;
+    margin: auto;
     font-family: 'Rouge Script', cursive;
     text-align: left; 
 }
