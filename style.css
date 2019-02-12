@@ -63,9 +63,12 @@ h1 {
 }
 
 #mushy {
-    width: 45%;
+    width: 55%;
     display: block;
-    margin: auto;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
 #buttons {
