@@ -1,10 +1,10 @@
-var cute = "https://pbs.twimg.com/profile_images/378800000743122475/4b1b8d56500f4bd56748282022c6341f.jpeg"
+var image0 = "images/dinner.jpg"
 
-var image1 = "https://theteachingfactor.files.wordpress.com/2015/01/number-1_blue-sun-swirl.png"
+var image1 = "images/massage.jpg"
 
-var image2 = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Number_2_in_light_blue_rounded_square.svg/1024px-Number_2_in_light_blue_rounded_square.svg.png"
+var image2 = "https://media.giphy.com/media/YljA1fpu0fkK4/giphy.gif"
 
-var image3 = "http://www.walkwithgod.org/wp-content/uploads/2014/01/117-3.jpg"
+var image3 = "images/happy.png"
 
 var count = 3
 
@@ -20,10 +20,12 @@ $("#no").click(function(){
 $(".cover").click(function(){
     $(this).off("click").removeClass("cover");
     var image
-    if (count > 0) {
+    if (count > -1) {
         if (count == 3) {
-            image = image1;
+            image = image0;
         } else if (count == 2) {
+            image = image1;
+        } else if (count == 1) {
             image = image2;
         } else {
             image = image3;
