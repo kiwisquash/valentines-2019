@@ -1,10 +1,3 @@
-/* Small sizing reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* Stretch HTML and BODY */
 html, body {
   width: 100%;
@@ -22,10 +15,9 @@ body {
 h1 {
     color: #CEF0D4;
     font-family: 'Rouge Script', cursive;
-    font-size: 50px; 
+    font-size: 250%; 
     font-weight: normal; 
-    line-height: 48px; 
-    margin: 135px 0 100px; 
+    margin: 20% 0 0; 
     text-align: center; 
     text-shadow: 1px 1px 2px #082b34; 
 }
@@ -36,7 +28,7 @@ h1 {
     font-size: 50px; 
     font-weight: normal; 
     line-height: 48px; 
-    margin: 50px 0 100px; 
+    margin: 10% 0 0; 
     text-align: center; 
     text-shadow: 1px 1px 2px #082b34; 
 }
@@ -68,23 +60,21 @@ h1 {
     -webkit-transition: transform 1.0s ease;
 
   /* Hide content that overflows the page */
-  /* overflow: hidden; */
-}
-
-.page.odd {
+  overflow: auto;
   transform-origin: bottom;
 }
 
-.page.even {
+#cover.turn {
+  transform: rotateX(-180deg);
+}
+
+#inner-bottom {
   top: 85%; 
   transform-origin: top;
   transform: rotateX(180deg); 
 }
 
-.page.odd.turn {
-  transform: rotateX(-180deg);
-}
-.page.even.turn {
+#inner-bottom.turn {
   transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
@@ -95,7 +85,7 @@ h1 {
 .coupon {
     width: 20%;
 }
-/* Put cover pages in front of content page */
+
 #cover {
   z-index: 3;
   background-image: url("images/transmutation-circle.png"), url("images/cool-yellow.png");
@@ -111,7 +101,7 @@ h1 {
     margin-right: auto;
 }
 
-#content {
+#inner-top {
   /* Some styling */
   overflow-y: auto;
   background-image: url( "images/Inside-image.png"),url("images/hearts.jpg");
@@ -120,6 +110,6 @@ h1 {
   background-position: bottom;
 }
 
-#cover_back {
+#inner-bottom {
   z-index: 2;
 }

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Happy Valentine's Day!</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
@@ -10,12 +11,10 @@
   </head>
 
   <body>
-    <main>
-
-        <div class = "page odd" id="cover">
+        <div class = "page mover" id="cover">
         <h1 id = "cover-msg"> Will you be my Lt. Hawkeye?</h1>
         <img id = "mushy" src = "images/Cover-image.png">
-        <div class = "buttons">
+        <div id = "buttons">
 <button id="yes" type="button">
     Yes
 </button>
@@ -26,11 +25,12 @@
         </div>
         </div>
 
-        <div class = "page odd" id="content">
-        <h1 id="inner-msg">Happy Valentine's Day!</h1>
+        <div class = "page inside" id="inner-top">
 </div>
 
-<div class = "page even" id="cover_back">
+<div class = "page inside mover" id="inner-bottom">
+
+    <h1 id="inner-msg">Happy Valentine's Day!</h1>
     <div class= "main-msg">
         <p>Dear Shayna,</p>
         <p>Thank you so much for being such a great support!</p>
@@ -39,12 +39,12 @@
         <p>Ki</p>
         <p>Please accept these coupons of gratitude ;)</p>
     </div>
+    <div id = "coupons">
             <img class = "coupon cover" src = "images/transmutation-circle.png">
             <img class = "coupon cover" src = "images/transmutation-circle.png">
             <img class = "coupon cover" src = "images/transmutation-circle.png">
             <img class = "coupon cover" src = "images/transmutation-circle.png">
-
         </div>
-    </main>
+        </div>
   </body>
 </html>

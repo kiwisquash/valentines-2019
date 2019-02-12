@@ -10,7 +10,7 @@ var count = 3
 
 $(document).ready(function(){
 $("#yes").click(function(){
-    $("#cover, #cover_back").toggleClass("turn");
+    $(".mover").toggleClass("turn");
   });
 
 $("#no").click(function(){
@@ -18,6 +18,7 @@ $("#no").click(function(){
   });
 
 $(".cover").click(function(){
+    // Remove the class cover
     var image
     if (count > 0) {
         if (count == 3) {
