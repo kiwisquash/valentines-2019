@@ -16,9 +16,30 @@ body {
   perspective: 1600px;
     -moz-perspective: 1600px;
     -webkit-perspective: 1600px;
-  font-family: Open sans, sans-serif;
+  text-align: center; 
 }
 
+h1 {
+    color: #CEF0D4;
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 135px 0 100px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34; 
+}
+
+#inner-msg {
+    color: #CEF0D4;
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 50px 0 100px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34; 
+}
 .page {
   display: inline-block;
   position: fixed;
@@ -26,7 +47,7 @@ body {
   
   /* Size & Position */
   left: 10%;
-  width: 80%;
+  width: 70%;
   margin-left: 0%; /* half of width */
   top: 5%;
   height: 80%;
@@ -51,16 +72,13 @@ body {
 }
 
 .page.odd {
-  /* odd pages flip along left side, and with minus degree rotation */
   transform-origin: bottom;
-    
 }
 
 .page.even {
   top: 85%; 
-  /* even pages flip along right side, and with positive degree rotation */
   transform-origin: top;
-  transform: rotateX(180deg); /* even pages start rotated (closed book) */
+  transform: rotateX(180deg); 
 }
 
 .page.odd.turn {
@@ -74,17 +92,34 @@ body {
     -webkit-transform: rotateY(0deg);
 }
 
+.coupon {
+    width: 20%;
+}
 /* Put cover pages in front of content page */
 #cover {
   z-index: 3;
+  background-image: url("images/transmutation-circle.png"), url("images/cool-yellow.png");
+ background-size: contain, cover;
+ background-repeat: no-repeat, no-repeat;
+ background-position: center, center;
 }
-#cover_back {
-  z-index: 2;
+
+#mushy {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #content {
   /* Some styling */
-  padding: 10px 25px;
   overflow-y: auto;
+  background-image: url( "images/Inside-image.png"),url("images/hearts.jpg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
+#cover_back {
+  z-index: 2;
+}
