@@ -44,10 +44,10 @@ h1 {
     -webkit-backface-visibility: hidden;
   
   /* Set up animation */
-  transition: transform 1.0s ease;
-    -o-transition: transform 1.0s ease;
-    -moz-transition: transform 1.0s ease;
-    -webkit-transition: transform 1.0s ease;
+  transition: transform 2.0s ease;
+    -o-transition: transform 2.0s ease;
+    -moz-transition: transform 2.0s ease;
+    -webkit-transition: transform 2.0s ease;
 
   /* Hide content that overflows the page */
   overflow: visible;
