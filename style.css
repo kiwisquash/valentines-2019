@@ -29,11 +29,11 @@ h1 {
   z-index: 1; 
   
   /* Size & Position */
-  left: 10%;
-  width: 70%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
   margin-left: 0%; 
   top: 5%;
-  height: 100%;
   margin-top: 0%; 
   
   /* Add some styling, so the pages are opaque */
@@ -96,7 +96,7 @@ h1 {
 }
 
 #inner-bottom {
-  top: 100%; 
+  top: 50%; 
   transform-origin: top;
   transform: rotateX(180deg); 
   z-index: 2;
@@ -126,9 +126,10 @@ h1 {
     /* border-radius: 10px; */
     /* border-width: 2px; */
     /* border-color: #FDFDF5; */
-    width: 75%;
+    width: 90%;
     margin: auto;
-    font-family: 'Rouge Script', cursive;
+    /* font-family: cursive; */
+    font-size: small;
     text-align: left; 
 }
 
