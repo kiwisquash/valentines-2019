@@ -10,6 +10,7 @@ body {
     -moz-perspective: 1600px;
     -webkit-perspective: 1600px;
   text-align: center; 
+  background-color: rgba(255, 255, 128, .5);
 }
 
 h1 {
