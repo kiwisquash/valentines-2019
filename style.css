@@ -130,12 +130,12 @@ h1 {
     width: 90%;
     margin: auto;
     /* font-family: cursive; */
-    font-size: small;
+    font-size: normal;
     text-align: left; 
 }
 
 .coupon {
-   width: 15%;
+   width: 22.5%;
 }
 
 .disclaimer {
